@@ -2,7 +2,6 @@ import React from 'react';
 import {Col, Row, Table, Form, FormControl, Button,Card, Stack, Container } from 'react-bootstrap';
 import NotificationBar,{Notification} from '../notifications.component';
 import {IoIosNotifications} from 'react-icons/io';
-import { AssignedPatients } from './doctorProfile.component';
 import { TableOptions } from '../tableWrapper.component';
 import Patients from '../Admin/patients.component';
 
@@ -27,7 +26,7 @@ function DoctorDashboard(){
             </Row>
             <Row>
                 <Container>
-                    <Patients/>
+                   
                 </Container>
             </Row>
         </>

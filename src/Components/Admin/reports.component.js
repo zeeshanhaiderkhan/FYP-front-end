@@ -7,6 +7,7 @@ import IconCustom from '../IconCustom.component';
 import { CustomModalComp } from '../customModal.component';
 import { FcPlus } from 'react-icons/fc';
 import { PatientDetailSection } from './patientProfile.component';
+
 const patientsData=[
     {
         id:'1',

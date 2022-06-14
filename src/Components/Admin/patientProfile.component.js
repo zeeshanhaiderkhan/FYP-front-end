@@ -9,13 +9,16 @@ import UserDetailForm from './userDetailForm.component';
 import {FcPlus} from 'react-icons/fc'
 import IconCustom from '../IconCustom.component';
 import CustomModal from '../customModal.component';
+import {useParams} from 'react-router-dom';
 
 function PatientProfile(){
+    var patientID=useParams().id;
+
     return(
         <>
             <Row style={{backgroundColor:"#ffc1e3"}}>
                 <Col sm={3} >
-                    <PatientDetailSection name="test" email="test@gmail.com" cnic="61101-2172076-9" phone="03070156758" id={1} />
+                    <PatientDetailSection edit={true}  name="test" email="test@gmail.com" cnic="61101-2172076-9" phone="03070156758" id={patientID} />
                 </Col>
                 <Col sm={9} >
                     <Row>
@@ -78,7 +81,7 @@ function PatientDetailSection(props){ //id,name,email,cnic,phone ,,img
         </Container> */
     return(
         <div style={{padding:20, boxShadow:"10px black", borderRadius:20}}>
-        <UserDetailForm/>
+        <UserDetailForm id={props.id} edit={props.edit} />
         </div>
     );
 }

@@ -1,6 +1,6 @@
 .App {
   text-align: center;
-    background-color: #e0ffff;
+  background-color: #e0ffff;
 }
 
 .App-logo {
@@ -36,4 +36,19 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.appContainer{
+  display: flex;
+  margin-top: 10px;
+}
+.subContainer{
+  display: flex;
+  flex:4;
+}
+
+
+.link{
+  text-decoration: none;
+  color: inherit;
 }
